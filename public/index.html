@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Meta tags -->
+        <meta name="description" content="Landing Page feita para testar o serviço Netlify">
+        <meta name="author" content="Ruan Kaylo">
+
+        <!-- Favicon -->
+        <!--link rel="icon" href="../assets/images/favicon.ico"-->
     
         <title>Ruan Kaylo</title>
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Latest compiled and minified jQuery -->
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -14,30 +20,22 @@
         <!-- Latest compiled and minified Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
+        <link href="../assets/css/index.css" rel="stylesheet">
+
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-        <style type="text/css">
-            html { position: relative; min-height: 100%; }
-            body { margin-bottom: 60px; font-family: "Font-awesome"; }
-            footer { position: absolute; bottom: 0; width: 100%; background-color: #f5f5f5; }
-            .text { margin-top: 30px; }
-        </style>
     </head>
     <body>
         <main>
             <div class="container">
                 <div class="jumbotron">
                     <h1>Ruan Kaylo</h1>
-                    <p>Bacharel em Ciências da Computação - UESPI</p>
+                    <p>Bacharel em Ciências da Computação</p>
                 </div>
 
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div class="list-group">
                                 <a href="https://github.com/RuanAyram" target="_blank" class="list-group-item">
                                     <i class="fab fa-github"> <span>GitHub</span></i>
@@ -45,7 +43,15 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-4">
+                            <div class="list-group">
+                                <a href="https://br.linkedin.com/in/ruan-kaylo-99805812b" target="_blank" class="list-group-item">
+                                    <i class="fab fa-linkedin"> <span>Linkedin</span></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
                             <div class="list-group">
                                 <a href="#" class="list-group-item">
                                     <i class="fas fa-asterisk"> <span>STW</span></i> <small class="pull-right">Em breve!</small>
@@ -81,8 +87,5 @@
             </div>
         </footer>
     </body>
-    <script type="text/JavaScript">
-        var a = jQuery('#aux');
-        a.text(new Date().getFullYear());
-    </script>
+    <script type="text/JavaScript" src="../assets/js/index.js"></script>
 </html>
