@@ -2,4 +2,4 @@
     #  Multi-key header rules are expressed with multi-line strings
     Link = '''
     <../assets/css/index.css>; rel=preload; as=stylesheet, \
-    <../assets/js/index.js>; rel=preload; as=script'''
+    <../assets/js/index.js>; rel=preload; as=text/JavaScript'''
