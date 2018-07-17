@@ -3,11 +3,10 @@
   [headers.values]
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
-    Content-Security-Policy = "frame-ancestors https://www.facebook.com"
     # Multi-key header rules are expressed with multi-line strings
     Link = '''
     </assets/css/index.css>; rel=preload; as=style, \
-    </assets/css/base3.css>; rel=preload; as=style'''
+    </assets/js/index.js>; rel=preload; as=script'''
     # Basic-Auth allows you to password protect your whole site but is only available
     # to paid accounts
     Basic-Auth = "someuser:somepassword anotheruser:anotherpassword"
