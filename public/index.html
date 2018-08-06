@@ -34,6 +34,9 @@
 
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </head>
     <body>
         <main>
@@ -45,7 +48,7 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="list-group">
                                 <a href="https://github.com/RuanAyram" target="_blank" class="list-group-item">
                                     <i class="fab fa-github"> <span>GitHub</span></i>
@@ -53,7 +56,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="list-group">
                                 <a href="https://br.linkedin.com/in/ruan-kaylo-99805812b" target="_blank" class="list-group-item">
                                     <i class="fab fa-linkedin"> <span>Linkedin</span></i>
@@ -61,11 +64,49 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-3">
+                            <div class="list-group">
+                                <a data-toggle="modal" href="#myModal" class="list-group-item"><i class="fas fa-address-book"></i> <span>Contato</span></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
                             <div class="list-group">
                                 <a href="#" class="list-group-item">
                                     <i class="fas fa-asterisk"> <span>STW</span></i> <small class="pull-right">Em breve!</small>
                                 </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Entre em contato:</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-horizontal" name="contact" method="POST" netlify netlify-honeypot="bot-field">
+                                    <div class="form-group">
+                                        <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputTextArea" class="col-sm-2 control-label">Mensagem</label>
+                                        <div class="col-sm-10">
+                                            <textarea name="message" class="form-control" id="inputTextArea" placeholder="Mensagem"></textarea>
+                                        </div>
+                                    </div>
+                                    <div data-netlify-recaptcha></div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                <button type="submit" class="btn btn-primary">Enviar</button>
                             </div>
                         </div>
                     </div>
