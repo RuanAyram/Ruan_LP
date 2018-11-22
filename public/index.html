@@ -9,6 +9,21 @@
         <meta name="description" content="Landing Page feita para testar o serviço Netlify">
         <meta name="author" content="Ruan Kaylo">
 
+        <!-- Chrome, Firefox OS and Opera -->
+        <meta name="theme-color" content="#000411">
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#000411">
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="#000411">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-mobile-web-app-title" content="Ruan Kaylo">
+
+        <!-- Meta tags [Facebook] -->
+        <meta property="og:title" content="ruankaylo.netlify.com">
+        <meta property="og:description" content="Landing Page feita para testar o serviço Netlify">
+        <meta property="og:image" content="assets/images/fav_one.png">
+
         <!-- Favicon -->
         <link rel="shortcut icon" href="assets/images/fav_one.png" type="image/x-icon">
 
@@ -33,13 +48,17 @@
           });
         </script>
 
-        <!-- Latest compiled and minified jQuery -->
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
         <!-- Latest compiled and minified Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+
         <link href="assets/css/index.css" rel="stylesheet">
+
+        <!-- Latest compiled and minified jQuery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Flowtype.js/1.1.0/flowtype.min.js" integrity="sha256-v18nZC6Birm72mHdpYcD5SG8hgL6P8BCfMnJC/WYoIE=" crossorigin="anonymous"></script>
 
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -48,105 +67,196 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </head>
     <body>
-        <main>
-            <div class="container">
-                <div class="jumbotron">
-                    <div class="jumb_h1">
-                        <h1>Ruan Kaylo</h1>
-                    </div>
-                    <div class="jumb_h4">
-                        <h4>Bacharel em Ciências da Computação</h4>
-                    </div>
+        <header id="hero" class="p-left p-right">
+            <div class="jumb_box jumb_flex">
+                <div class="jumb_h1">
+                    <h1 id="pageHeading">Ruan Kaylo</h1>
+                    <h2 id="pageSubheading">Full Stack Developer</h2>
                 </div>
 
-                <div class="row">
+                <div class="social">
+                    <a href="https://github.com/RuanAyram" target="_blank" class="icons">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a href="https://br.linkedin.com/in/ruan-kaylo-99805812b" target="_blank" class="icons">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+
+                    <a data-toggle="modal" href="#myModal" class="icons">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+
+                <div class="arrowDown">
+                    <a href="#one" class="icon_angle"><i class="fa fa-angle-down"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <main id="main" class="p-left p-right">
+            <section id="one" class="elem jumb_box">
+                <span class="startlabel">Quem sou eu</span>
+                <h4 class="mt-2">
+                    Eu sou formado em Ciências da Computação pela Universidade Estadual do Piauí (UESPI).
+                    <p></p>
+                    Sou apaixonado por tecnologia e programação e sempre procuro desenvolver projetos para apeifeiçoar meu conhecimento.
+                    <p></p>
+                    Atualmente trabalho com Ruby on Rails e estou iniciando os estudos em Angular para me especializar no front-end.
+                </h4>
+            </section>
+
+            <section class="elem jumb_box">
+                <span class="startlabel">Skills</span>
+                <div class="row mt-2">
                     <div class="col-md-12">
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="list-group">
-                                <a href="https://github.com/RuanAyram" target="_blank" class="list-group-item">
-                                    <i class="fab fa-github"> <span>GitHub</span></i>
-                                </a>
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="assets/images/browser.png" alt="Front-end" title="Front-end" class="img_mt">
+                                            <h1>Front-end</h1>
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <h4>HTML</h4>
+                                            <h4>CSS</h4>
+                                            <h4>JavaScript | jQuery</h4>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="list-group">
-                                <a href="https://br.linkedin.com/in/ruan-kaylo-99805812b" target="_blank" class="list-group-item">
-                                    <i class="fab fa-linkedin"> <span>Linkedin</span></i>
-                                </a>
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="assets/images/server.png" alt="Back-end" title="Back-end" class="img_mt">
+                                            <h1>Programação</h1>
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <h4>Ruby on Rails</h4>
+                                            <h4>PostgreSQL | MySQL</h4>
+                                            <h4>Android</h4>
+                                            <h4>Ionic 1</h4>
+                                            <h4>Liquid (Jekyll)</h4>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="list-group">
-                                <a data-toggle="modal" href="#myModal" class="list-group-item"><i class="fas fa-address-book"></i> <span>Contato</span></a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="list-group">
-                                <a href="#" class="list-group-item">
-                                    <i class="fas fa-asterisk"> <span>STW</span></i> <small class="pull-right">Em breve!</small>
-                                </a>
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="assets/images/team.png" alt="Other" title="Other" class="img_mt">
+                                            <h1>Outros</h1>
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <h4>Git</h4>
+                                            <h4>Linux</h4>
+                                            <h4>WIndows</h4>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title" id="myModalLabel">Entre em contato:</h4>
-                            </div>
-                            <div class="modal-body">
-                                <form class="form-horizontal" name="contact" method="POST" action="https://formspree.io/ruan.kaylo@gmail.com">
-                                    <div class="form-group">
-                                        <label for="inputEmail" class="col-sm-2 control-label">Email</label>
-                                        <div class="col-sm-10">
-                                            <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email" required="true">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="inputTextArea" class="col-sm-2 control-label">Mensagem</label>
-                                        <div class="col-sm-10">
-                                            <textarea name="message" class="form-control" id="inputTextArea" placeholder="Mensagem" required="true"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-sm-offset-2 col-sm-10">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" name="checkbox1" id="checkbox1" value="Ruan"> Ativar?
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <input type="text" name="_gotcha" style="display:none" />
-                                    </div>
-                                    <div class="pull-right">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                                        <button type="submit" class="btn btn-primary">Enviar</button>
-                                    </div>
-                                    <br>
-                                    <br>
-                                </form>
+            <section class="elem jumb_box">
+                <span class="startlabel">Portifólio</span>
+                <div class="row mt-2">
+                    <div class="col-md-12">
+                        <div class="col-md-6">
+                            <div class="list-group">
+                                <img id="myImg" src="assets/images/LP_Ruan_v1.png" alt="Versão 1.0" title="Versão 1.0" class="list-group-item port_img">
+                                <figcaption class="text-center">Versão 1.0</figcaption>
                             </div>
                         </div>
+                        <div class="col-md-6">
+                            <div class="list-group">
+                                <img id="myImg" src="assets/images/Blog_HE.png" alt="Site Helder Eugênio" title="Site Helder Eugênio" data-link="https://heldereugenio.com.br" class="list-group-item port_img">
+                                <figcaption class="text-center">Site Helder Eugênio</figcaption>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Image Modal -->
+        <div id="modalImage" class="modal">
+            <span class="close_modal">&times;</span>
+            <img class="modal-content" id="img01">
+            <h4 id="caption"></h4>
+        </div>
+
+        <!-- Contact Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Entre em contato:</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal" name="contact" method="POST" action="https://formspree.io/ruan.kaylo@gmail.com">
+                            <div class="form-group">
+                                <label for="inputName" class="col-md-2 control-label">Nome</label>
+                                <div class="col-md-10">
+                                    <input type="text" name="name" class="form-control" id="inputName" placeholder="Nome" required="true">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email" required="true">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputTextArea" class="col-sm-2 control-label">Mensagem</label>
+                                <div class="col-sm-10">
+                                    <textarea name="message" class="form-control" id="inputTextArea" placeholder="Mensagem" required="true"></textarea>
+                                </div>
+                            </div>
+                            <!--div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="checkbox1" id="checkbox1" value="Ruan"> Ativar?
+                                        </label>
+                                    </div>
+                                </div>
+                            </div-->
+                            <div>
+                                <input type="text" name="_gotcha" style="display:none" />
+                            </div>
+                            <div class="pull-right">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+                            <br>
+                            <br>
+                        </form>
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
+
         <footer>
             <div class="container-fluid">
-                <div class="row">
+                <div class="row footer_mb">
                     <div class="col-md-12">
-                        <div class="pull-left text">
-                            &copy; <span id="aux"></span> Ruan Kaylo
+                        <div class="pull-left text_footer">
+                            &copy; 2018 - <span id="year"></span> Ruan Kaylo
                         </div>
-                        <div class="pull-right text">
+                        <div class="pull-right text_footer">
                             <span>Hosted by</span> <a href="https://www.netlify.com/" target="_blank">Netlify</a>
                         </div>
                     </div>
@@ -156,7 +266,10 @@
                     <div class="col-md-12">
                         <div class="text-center">
                             <small>
-                                <span>Feito com </span> <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> & <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>
+                                <span>Feito com  <i class="fas fa-heart icon_heart"></i> | </span> <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> | <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>
+                            </small>
+                            <small>
+                                <div>Icons made by <a href="https://www.freepik.com" title="Freepik" target="_blank">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
                             </small>
                         </div>
                     </div>

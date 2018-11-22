@@ -1,4 +1,4 @@
 # Ruan_LP
 - Landing Page [test]
 
-#### [Netlify](https://www.netlify.com/)
+#### [Netlify - Serviço de hospedagem grátis e deploy](https://www.netlify.com/)
