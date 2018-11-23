@@ -257,9 +257,9 @@ footer {
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    -webkit-box-shadow: 6px 6px 5px 0px rgba(51,51,51,1);
+    /*-webkit-box-shadow: 6px 6px 5px 0px rgba(51,51,51,1);
     -moz-box-shadow: 6px 6px 5px 0px rgba(51,51,51,1);
-    box-shadow: 6px 6px 5px 0px rgba(51,51,51,1);
+    box-shadow: 6px 6px 5px 0px rgba(51,51,51,1);*/
 }
 
 .flip-card:hover .flip-card-inner {
@@ -281,7 +281,6 @@ footer {
 }
 
 .flip-card-back {
-    background-color: #000411;
     border: 1px solid rgba(255, 255, 255, 0.35);
     transform: rotateY(180deg);
     z-index: 1;
