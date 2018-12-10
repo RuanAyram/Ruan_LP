@@ -97,6 +97,12 @@ footer {
     color: rgba(255, 255, 255, 0.99);
 }
 
+.icon_angle:hover {
+    -webkit-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    transform: translateY(5px);
+}
+
 .corner {
     position: absolute;
     bottom: 0;
@@ -148,6 +154,12 @@ footer {
     border-radius: 100%;
     margin-right: 1rem;
     color: rgba(255, 255, 255, 0.99);
+}
+
+.icons:hover {
+    -webkit-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    transform: translateY(5px)
 }
 
 .icon_heart {
