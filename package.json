@@ -2,10 +2,8 @@
   "name": "ruan_lp",
   "version": "2.0.0",
   "description": "My landing page",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "",
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RuanAyram/Ruan_LP.git"
