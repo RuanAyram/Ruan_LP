@@ -23,33 +23,98 @@ jQuery(document).ready(function() {
     });
 
     // Get the current year
-    var a = jQuery('#year');
+    var a = $('#year');
     a.text(new Date().getFullYear());
 
     // Get the modal
-    var modal = document.getElementById("modalImage");
+    var modal = $('#modalImage');
     // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = jQuery(".port_img");
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
+    var img = $('.port_img');
+    var modalImg = $('#img01');
+    var captionText = $('#caption');
 
     img.each(function(index) {
-        $(this).on("click", function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            if ($(this).data("link") != undefined) {
-                captionText.innerHTML = '<a href=' + $(this).data("link") + ' target="_blank">' + this.alt;
+        $(this).on('click', function(){
+            modal.css('display', 'block');
+            modalImg.attr('src', this.src)
+            if ($(this).data('link') != undefined) {
+                captionText.html('<a href=' + $(this).data("link") + ' target="_blank">' + this.alt);
             } else {
-                captionText.innerHTML = this.alt;
+                captionText.html(this.alt);
             }
         });
     });
 
     // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close_modal")[0];
+    var span = $('.close_modal')[0];
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
-        modal.style.display = "none";
+        modal.css('display', 'none');
     };
+
+    // Axios raw url
+    var url_github = 'https://api.github.com/users/RuanAyram/repos?sort=pushed';
+
+    axios.get(url_github)
+      .then(function (response) {
+        var text_left = "";
+        var text_right = "";
+        text_left += "<tbody>"
+        for (i = 0; i < 3; i++) {
+            text_left += "<tr>"
+            text_left += "    <th>"
+            text_left += "        <a href='"+response.data[i].html_url+"'class='link_white' target='_blank'>"
+            text_left += "            <div class='div_display'>"
+            text_left += "                <span class='txt_under'>"+response.data[i].name+"</span>"
+            if (response.data[i].language == "Ruby") {
+                text_left += "            <span class='label label-danger label_margin'>"+response.data[i].language+"</span>"
+            } else if (response.data[i].language == "JavaScript") {
+                text_left += "            <span class='label label-warning label_margin'>"+response.data[i].language+"</span>"
+            } else if (response.data[i].language == "HTML") {
+                text_left += "            <span class='label label-success label_margin'>"+response.data[i].language+"</span>"
+            } else if (response.data[i].language == "TypeScript") {
+                text_left += "            <span class='label label-info label_margin'>"+response.data[i].language+"</span>"
+            } else {
+                text_left += "            <span class='label label-primary label_margin'>"+response.data[i].language+"</span>"
+            }
+            text_left += "            </div>"
+            text_left += "            <p><small> - "+response.data[i].description+"</small></p>"
+            text_left += "        </a>";
+            text_left += "    </th>"
+            text_left += "</tr>"
+        }
+        text_left += "</tbody>"
+        text_right += "<tbody>"
+        for (j = 3; j < 6; j++) {
+            text_right += "<tr>"
+            text_right += "    <th>"
+            text_right += "        <a href='"+response.data[j].html_url+"'class='link_white' target='_blank'>"
+            text_right += "            <div class='div_display'>"
+            text_right += "                <span class='txt_under'>"+response.data[j].name+"</span>"
+            if (response.data[j].language == "Ruby") {
+                text_right += "            <span class='label label-danger label_margin'>"+response.data[j].language+"</span>"
+            } else if (response.data[j].language == "JavaScript") {
+                text_right += "            <span class='label label-warning label_margin'>"+response.data[j].language+"</span>"
+            } else if (response.data[j].language == "HTML") {
+                text_right += "            <span class='label label-success label_margin'>"+response.data[j].language+"</span>"
+            } else if (response.data[j].language == "TypeScript") {
+                text_right += "            <span class='label label-info label_margin'>"+response.data[j].language+"</span>"
+            } else {
+                text_right += "            <span class='label label-primary label_margin'>"+response.data[j].language+"</span>"
+            }
+            text_right += "            </div>"
+            text_right += "            <p><small> - "+response.data[j].description+"</small></p>"
+            text_right += "        </a>";
+            text_right += "    </th>"
+            text_right += "</tr>"
+        }
+        text_right += "</tbody>"
+        $('.table_left_side').html(text_left);
+        $('.table_right_side').html(text_right);
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      });
 });

@@ -294,7 +294,7 @@ footer {
 
 .flip-card-front {
     border: 1px solid rgba(255, 255, 255, 0.35);
-    color: rgba(255, 255, 255, 1.0);
+    color: rgba(255, 255, 255, 0.99);
     z-index: 2;
 }
 
@@ -305,6 +305,27 @@ footer {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
     z-index: 10;
+}
+
+.link_white {
+    color: rgba(255, 255, 255, 0.99);
+}
+
+.link_white:hover {
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.div_display {
+    display: flex;
+    width: 100%;
+}
+
+.div_display .txt_under {
+    text-decoration: underline;
+}
+
+.label_margin {
+    margin: 0 0 0 auto;
 }
 
 /* Media Queries */
