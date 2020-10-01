@@ -1,7 +1,7 @@
 {
   "name": "ruan_lp",
   "version": "2.0.0",
-  "description": "My landing page",
+  "description": "My personal website",
   "main": "",
   "scripts": {},
   "repository": {
@@ -16,7 +16,7 @@
   ],
   "author": {
     "name": "Ruan Kaylo",
-    "url": "https://ruankaylo.netlify.com"
+    "url": "https://ruankaylo.netlify.app"
   },
   "license": "MIT",
   "bugs": {
