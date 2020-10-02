@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang='{{ site.lang | default: "en-US" }}'>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ site.title }}</title>
+
+    <link rel="shortcut icon" href="assets/images/fav_one.png" type="image/x-icon">
+
+    {% include google-analytics.html %}
+    {% include scripts.html %}
+  </head>
+  <body>
+    {% include header_hero.html %}
+    {% include main.html %}
+    {% include footer.html %}
+    <script type="text/javascript" src="assets/js/index.js"></script>
+  </body>
+</html>

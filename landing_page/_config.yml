@@ -1,0 +1,5 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "Ruan Kaylo" # the name of your site, e.g. ACME Corp.
+
+google_analytics: UA-122477877-1      # Required - replace with your tracking id
