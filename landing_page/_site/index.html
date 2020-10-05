@@ -76,7 +76,7 @@
     <p></p>
     Sou apaixonado por tecnologia e programação e sempre procuro desenvolver projetos para aprimorar meu conhecimento e habilidades.
     <p></p>
-    Atualmente trabalho com Ruby on Rails e estou iniciando os estudos em Angular(Typescript) para me especializar no front-end.
+    Atualmente trabalho com Ruby on Rails e estou iniciando os estudos em Angular(Typescript) e VueJS para me especializar no front-end.
   </h4>
 </section>
 
@@ -93,9 +93,14 @@
                 <h1>Front-end</h1>
               </div>
               <div class="flip-card-back">
-                <h4>HTML5</h4>
-                <h4>CSS - Sass</h4>
-                <h4>JavaScript | jQuery</h4>
+                
+                  <h4>HTML5</h4>
+                
+                  <h4>CSS - Sass</h4>
+                
+                  <h4>JavaScript | jQuery</h4>
+                
+                </ul>
               </div>
               <div class="corner" ></div>
             </div>
@@ -112,11 +117,17 @@
                 <h1>Programação</h1>
               </div>
               <div class="flip-card-back">
+                
                   <h4>Ruby on Rails</h4>
+                
                   <h4>PostgreSQL | MySQL</h4>
+                
                   <h4>Android</h4>
+                
                   <h4>Ionic 1</h4>
+                
                   <h4>Liquid (Jekyll)</h4>
+                
               </div>
               <div class="corner"></div>
             </div>
@@ -133,9 +144,13 @@
                 <h1>Outros</h1>
               </div>
               <div class="flip-card-back">
-                <h4>Git (Versionamento)</h4>
-                <h4>Linux</h4>
-                <h4>Windows</h4>
+                
+                  <h4>Git (Versionamento)</h4>
+                
+                  <h4>Linux (Ubuntu)</h4>
+                
+                  <h4>Windows</h4>
+                
               </div>
               <div class="corner"></div>
             </div>
@@ -182,6 +197,63 @@
 
 </main>
 
+    <div id="modalImage" class="modal">
+  <span class="close_modal">&times;</span>
+  <img class="modal-content" id="img01">
+  <h4 id="caption"></h4>
+</div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Entre em contato:</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal" name="contact" method="POST" action="https://formspree.io/ruan.kaylo@gmail.com">
+          <div class="form-group">
+            <label for="inputName" class="col-md-2 control-label">Nome</label>
+            <div class="col-md-10">
+                <input type="text" name="name" class="form-control" id="inputName" placeholder="Nome" required="true">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email" required="true">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputTextArea" class="col-sm-2 control-label">Mensagem</label>
+            <div class="col-sm-10">
+              <textarea name="message" class="form-control" id="inputTextArea" placeholder="Mensagem" required="true"></textarea>
+            </div>
+          </div>
+          <!--div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="checkbox1" id="checkbox1" value="Ruan"> Ativar?
+                </label>
+              </div>
+            </div>
+          </div-->
+          <div>
+            <input type="text" name="_gotcha" style="display:none" />
+          </div>
+          <div class="pull-right">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+          <br>
+          <br>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
     <footer>
   <div class="container-fluid">
     <div class="row footer_mb">
@@ -200,8 +272,13 @@
         <div class="text-center">
           <small>
             <span>Feito com  <i class="fas fa-heart icon_heart"></i> | </span>
-            <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> |
-            <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+            
+              <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> |
+            
+              <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> |
+            
+              <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> |
+            
           </small>
           <small>
             <div>Icons made by <a href="https://www.freepik.com" title="Freepik" target="_blank">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
@@ -212,6 +289,6 @@
   </div>
 </footer>
 
-    <script type="text/javascript" src="assets/js/index.js"></script>
+    <script src="assets/js/index.js"></script>
   </body>
 </html>

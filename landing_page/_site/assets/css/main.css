@@ -1,14 +1,3 @@
-body { background: #000411 !important; color: rgba(255, 255, 255, 0.99) !important; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
-
-/* All */
-html { position: relative; min-height: 100%; }
-
-body { font-family: 'Lora', serif !important; margin-bottom: 70px !important; background-color: #000411 !important; color: rgba(255, 255, 255, 0.99) !important; }
-
-section { margin-bottom: 20px; }
-
-footer { position: absolute; bottom: 0; width: 100%; height: 60px; line-height: 100%; border-top: 1px solid rgba(255, 255, 255, 0.15); }
-
 /* Custom */
 .text_footer { margin-top: 30px; }
 
@@ -33,6 +22,22 @@ footer { position: absolute; bottom: 0; width: 100%; height: 60px; line-height: 
 .icon_angle:hover { -webkit-transform: translateY(5px); -ms-transform: translateY(5px); transform: translateY(5px); }
 
 .corner { position: absolute; bottom: 0; right: 0; width: 0; height: 0; margin: 5px; border: 9px solid; border-color: transparent rgba(255, 255, 255, 0.55) rgba(255, 255, 255, 0.55) transparent; }
+
+/* Media Queries */
+@media only screen and (min-width: 1200px) { .social { display: flex; align-items: center; justify-content: center; padding-left: 2rem; } .p-left { padding-left: 9rem; } .p-right { padding-right: 9rem; } }
+
+@media screen and (max-width: 1680px) { .social { display: flex; align-items: center; justify-content: center; padding-left: 2rem; } .p-left { padding-left: 9rem; } .p-right { padding-right: 9rem; } }
+
+@media screen and (max-width: 768px) { .jumb_flex { min-height: 0; } .social { margin-bottom: 10px; } .modal-content { width: 100%; } .arrowDown { display: none; } .p-left { padding-left: 2rem; } .p-right { padding-right: 2rem; } }
+
+/* All */
+html { position: relative; min-height: 100%; }
+
+body { background: #000411 !important; color: rgba(255, 255, 255, 0.99) !important; font-family: "Lora", serif !important; margin-bottom: 70px !important; }
+
+section { margin-bottom: 20px; }
+
+footer { position: absolute; bottom: 0; width: 100%; height: 60px; line-height: 100%; border-top: 1px solid rgba(255, 255, 255, 0.15); }
 
 /* Custom Jumb */
 .jumb_box { border: 2px solid rgba(255, 255, 255, 0.15); }
@@ -99,12 +104,5 @@ footer { position: absolute; bottom: 0; width: 100%; height: 60px; line-height: 
 .div_display .txt_under { text-decoration: underline; }
 
 .label_margin { margin: 0 0 0 auto; }
-
-/* Media Queries */
-@media only screen and (min-width: 1200px) { .social { display: flex; align-items: center; justify-content: center; padding-left: 2rem; } .p-left { padding-left: 9rem; } .p-right { padding-right: 9rem; } }
-
-@media screen and (max-width: 1680px) { .social { display: flex; align-items: center; justify-content: center; padding-left: 2rem; } .p-left { padding-left: 9rem; } .p-right { padding-right: 9rem; } }
-
-@media screen and (max-width: 768px) { .jumb_flex { min-height: 0; } .social { margin-bottom: 10px; } .modal-content { width: 100%; } .arrowDown { display: none; } .p-left { padding-left: 2rem; } .p-right { padding-right: 2rem; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,23 +1,19 @@
 @import "variables";
-
-body {
-  background: $backgroundColor !important;
-  color: $bodyColor !important;
-  font-family: $bodyFont;
-}
+@import "custom";
+@import "media_queries";
 
 /* All */
 
 html {
-    position: relative;
-    min-height: 100%;
+  position: relative;
+  min-height: 100%;
 }
 
 body {
-  font-family: 'Lora', serif !important;
+  background: $backgroundColor !important;
+  color: $bodyColor !important;
+  font-family: $bodyFont !important;
   margin-bottom: 70px !important;
-  background-color: #000411 !important;
-  color: rgba(255, 255, 255, 0.99) !important;
 }
 
 section {
@@ -33,94 +29,6 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.15)
 }
 
-/* Custom */
-
-.text_footer {
-  margin-top: 30px;
-}
-
-.footer_mb {
-  margin-bottom: 12px;
-}
-
-.img_mt {
-  margin-top: 10px;
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
-}
-
-.elem {
-  position: relative;
-}
-
-.elem h4 {
-  padding: 0 1em;
-}
-
-.startlabel {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #E0E0E0;
-  padding: 0 4px 4px 0;
-  background-color: rgba(255, 255, 255, 0.35);
-  text-transform: uppercase;
-}
-
-.mt-2 {
-  margin-top: 2em;
-}
-
-.port_img {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-}
-
-.arrowDown {
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  -moz-flex-direction: row;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -moz-justify-content: center;
-  -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  margin-top: auto;
-}
-
-.icon_angle {
-  display: inline-block;
-  height: 5.5rem;
-  width: 5.5rem;
-  font-size: 5.5rem;
-  line-height: 5.5rem;
-  text-align: center;
-  border-radius: 100%;
-  color: rgba(255, 255, 255, 0.99);
-}
-
-.icon_angle:hover {
-  -webkit-transform: translateY(5px);
-  -ms-transform: translateY(5px);
-  transform: translateY(5px);
-}
-
-.corner {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 0;
-  height: 0;
-  margin: 5px;
-  border: 9px solid;
-  border-color: transparent rgba(255, 255, 255, 0.55) rgba(255, 255, 255, 0.55) transparent;
-}
 
 /* Custom Jumb */
 
@@ -162,12 +70,12 @@ footer {
   border-radius: 100%;
   margin-right: 1rem;
   color: rgba(255, 255, 255, 0.99);
-}
 
-.icons:hover {
-  -webkit-transform: translateY(5px);
-  -ms-transform: translateY(5px);
-  transform: translateY(5px)
+  &:hover {
+    -webkit-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    transform: translateY(5px)
+  }
 }
 
 .icon_heart {
@@ -251,13 +159,12 @@ footer {
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
-}
 
-.close_modal:hover,
-.close_modal:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
+  &:hover, &:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
 
 /* Flip Card */
@@ -307,7 +214,7 @@ footer {
 }
 
 .flip-card-back {
-  background-color: #000411;
+  background-color: $backgroundColor;
   border: 1px solid rgba(255, 255, 255, 0.35);
   -moz-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
@@ -317,83 +224,21 @@ footer {
 
 .link_white {
   color: rgba(255, 255, 255, 0.99);
-}
 
-.link_white:hover {
-  color: rgba(255, 255, 255, 0.50);
+  &:hover {
+    color: rgba(255, 255, 255, 0.50);
+  }
 }
 
 .div_display {
   display: flex;
   width: 100%;
-}
 
-.div_display .txt_under {
-  text-decoration: underline;
+  .txt_under {
+    text-decoration: underline;
+  }
 }
 
 .label_margin {
   margin: 0 0 0 auto;
-}
-
-/* Media Queries */
-
-@media only screen and (min-width : 1200px) {
-  .social {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 2rem;
-  }
-
-  .p-left {
-    padding-left: 9rem;
-  }
-
-  .p-right {
-    padding-right: 9rem;
-  }
-}
-
-@media screen and (max-width: 1680px) {
-  .social {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 2rem;
-  }
-
-  .p-left {
-    padding-left: 9rem;
-  }
-
-  .p-right {
-    padding-right: 9rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .jumb_flex {
-    min-height: 0;
-  }
-
-  .social {
-    margin-bottom: 10px;
-  }
-
-  .modal-content {
-    width: 100%;
-  }
-
-  .arrowDown {
-    display: none;
-  }
-
-  .p-left {
-    padding-left: 2rem;
-  }
-
-  .p-right {
-    padding-right: 2rem;
-  }
 }

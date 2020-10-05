@@ -2,4 +2,9 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Ruan Kaylo" # the name of your site, e.g. ACME Corp.
 
+socials:
+  github: https://github.com/RuanAyram
+  linkedin: https://br.linkedin.com/in/ruan-kaylo-99805812b
+  email: ruan.kaylo@gmail.com
+
 google_analytics: UA-122477877-1      # Required - replace with your tracking id

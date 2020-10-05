@@ -11,9 +11,10 @@
                 <h1>Front-end</h1>
               </div>
               <div class="flip-card-back">
-                <h4>HTML5</h4>
-                <h4>CSS - Sass</h4>
-                <h4>JavaScript | jQuery</h4>
+                {% for skill in site.data.front_end.skills %}
+                  <h4>{{ skill.name }}</h4>
+                {% endfor %}
+                </ul>
               </div>
               <div class="corner" ></div>
             </div>
@@ -30,11 +31,9 @@
                 <h1>Programação</h1>
               </div>
               <div class="flip-card-back">
-                  <h4>Ruby on Rails</h4>
-                  <h4>PostgreSQL | MySQL</h4>
-                  <h4>Android</h4>
-                  <h4>Ionic 1</h4>
-                  <h4>Liquid (Jekyll)</h4>
+                {% for skill in site.data.back_end.skills %}
+                  <h4>{{ skill.name }}</h4>
+                {% endfor %}
               </div>
               <div class="corner"></div>
             </div>
@@ -51,9 +50,9 @@
                 <h1>Outros</h1>
               </div>
               <div class="flip-card-back">
-                <h4>Git (Versionamento)</h4>
-                <h4>Linux</h4>
-                <h4>Windows</h4>
+                {% for skill in site.data.others.skills %}
+                  <h4>{{ skill.name }}</h4>
+                {% endfor %}
               </div>
               <div class="corner"></div>
             </div>

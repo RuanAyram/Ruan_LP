@@ -1,0 +1,50 @@
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Entre em contato:</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal" name="contact" method="POST" action="https://formspree.io/{{ site.socials.email }}">
+          <div class="form-group">
+            <label for="inputName" class="col-md-2 control-label">Nome</label>
+            <div class="col-md-10">
+                <input type="text" name="name" class="form-control" id="inputName" placeholder="Nome" required="true">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email" required="true">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputTextArea" class="col-sm-2 control-label">Mensagem</label>
+            <div class="col-sm-10">
+              <textarea name="message" class="form-control" id="inputTextArea" placeholder="Mensagem" required="true"></textarea>
+            </div>
+          </div>
+          <!--div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="checkbox1" id="checkbox1" value="Ruan"> Ativar?
+                </label>
+              </div>
+            </div>
+          </div-->
+          <div>
+            <input type="text" name="_gotcha" style="display:none" />
+          </div>
+          <div class="pull-right">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+          <br>
+          <br>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

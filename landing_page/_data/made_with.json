@@ -1,0 +1,7 @@
+{
+  "tools":[
+    {"name": "Bootstrap", "link": "https://getbootstrap.com/"},
+    {"name": "Font Awesome", "link": "https://fontawesome.com/"},
+    {"name": "Jekyll", "link": "https://jekyllrb.com/"},
+  ]
+}

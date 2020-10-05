@@ -1,0 +1,9 @@
+{
+  "skills":[
+    {"name": "Ruby on Rails"},
+    {"name": "PostgreSQL | MySQL"},
+    {"name": "Android"},
+    {"name": "Ionic 1"},
+    {"name": "Liquid (Jekyll)"},
+  ]
+}

@@ -1,4 +1,4 @@
-jQuery(document).ready(function() {
+$(document).ready(function() {
   (function($) {
     "use strict"; // Start of use strict
 
@@ -11,7 +11,7 @@ jQuery(document).ready(function() {
         minimum: 700,
         fontRatio: 25
     });
-  })(jQuery); // End of use strict
+  })($); // End of use strict
 
   // Smooth scrool
   $('.icon_angle').click(function(){
@@ -49,28 +49,34 @@ jQuery(document).ready(function() {
   };
 
   // Axios raw url
-  var url_github = 'https://api.github.com/users/RuanAyram/repos?sort=pushed';
+  var url_github = 'https://api.github.com/users/RuanAyram/repos?sort=pushed&page=1&per_page=6';
 
   axios.get(url_github).then(function (response) {
       var text_left = "";
       var text_right = "";
       text_left += "<tbody>"
       for (i = 0; i < 3; i++) {
+        const language = response.data[i].language
         text_left += "<tr>"
         text_left += "    <th>"
         text_left += "        <a href='"+response.data[i].html_url+"'class='link_white' target='_blank'>"
         text_left += "            <div class='div_display'>"
         text_left += "                <span class='txt_under'>"+response.data[i].name+"</span>"
-        if (response.data[i].language == "Ruby") {
-          text_left += "            <span class='label label-danger label_margin'>"+response.data[i].language+"</span>"
-        } else if (response.data[i].language == "JavaScript") {
-          text_left += "            <span class='label label-warning label_margin'>"+response.data[i].language+"</span>"
-        } else if (response.data[i].language == "HTML") {
-          text_left += "            <span class='label label-success label_margin'>"+response.data[i].language+"</span>"
-        } else if (response.data[i].language == "TypeScript") {
-          text_left += "            <span class='label label-info label_margin'>"+response.data[i].language+"</span>"
-        } else {
-          text_left += "            <span class='label label-primary label_margin'>"+response.data[i].language+"</span>"
+        switch (language) {
+          case 'Ruby':
+            text_left += "            <span class='label label-danger label_margin'>"+response.data[i].language+"</span>";
+            break;
+          case 'JavaScript':
+            text_left += "            <span class='label label-warning label_margin'>"+response.data[i].language+"</span>"
+            break;
+          case 'HTML':
+            text_left += "            <span class='label label-success label_margin'>"+response.data[i].language+"</span>"
+            break;
+          case 'TypeScript':
+            text_left += "            <span class='label label-info label_margin'>"+response.data[i].language+"</span>"
+            break;
+          default:
+            text_left += "            <span class='label label-primary label_margin'>"+response.data[i].language+"</span>"
         }
         text_left += "            </div>"
         text_left += "            <p><small> - "+response.data[i].description+"</small></p>"
@@ -81,21 +87,27 @@ jQuery(document).ready(function() {
       text_left += "</tbody>"
       text_right += "<tbody>"
       for (j = 3; j < 6; j++) {
+        const language = response.data[j].language
         text_right += "<tr>"
         text_right += "    <th>"
         text_right += "        <a href='"+response.data[j].html_url+"'class='link_white' target='_blank'>"
         text_right += "            <div class='div_display'>"
         text_right += "                <span class='txt_under'>"+response.data[j].name+"</span>"
-        if (response.data[j].language == "Ruby") {
-          text_right += "            <span class='label label-danger label_margin'>"+response.data[j].language+"</span>"
-        } else if (response.data[j].language == "JavaScript") {
-          text_right += "            <span class='label label-warning label_margin'>"+response.data[j].language+"</span>"
-        } else if (response.data[j].language == "HTML") {
-          text_right += "            <span class='label label-success label_margin'>"+response.data[j].language+"</span>"
-        } else if (response.data[j].language == "TypeScript") {
-          text_right += "            <span class='label label-info label_margin'>"+response.data[j].language+"</span>"
-        } else {
-          text_right += "            <span class='label label-primary label_margin'>"+response.data[j].language+"</span>"
+        switch (language) {
+          case 'Ruby':
+            text_right += "            <span class='label label-danger label_margin'>"+response.data[j].language+"</span>";
+            break;
+          case 'JavaScript':
+            text_right += "            <span class='label label-warning label_margin'>"+response.data[j].language+"</span>";
+            break;
+          case 'HTML':
+            text_right += "            <span class='label label-success label_margin'>"+response.data[j].language+"</span>";
+            break;
+          case 'TypeScript':
+            text_right += "            <span class='label label-info label_margin'>"+response.data[j].language+"</span>";
+            break;
+          default:
+            text_right += "            <span class='label label-primary label_margin'>"+response.data[j].language+"</span>";
         }
         text_right += "            </div>"
         text_right += "            <p><small> - "+response.data[j].description+"</small></p>"

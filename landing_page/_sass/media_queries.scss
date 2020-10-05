@@ -1,0 +1,61 @@
+/* Media Queries */
+
+@media only screen and (min-width : 1200px) {
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2rem;
+  }
+
+  .p-left {
+    padding-left: 9rem;
+  }
+
+  .p-right {
+    padding-right: 9rem;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2rem;
+  }
+
+  .p-left {
+    padding-left: 9rem;
+  }
+
+  .p-right {
+    padding-right: 9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .jumb_flex {
+    min-height: 0;
+  }
+
+  .social {
+    margin-bottom: 10px;
+  }
+
+  .modal-content {
+    width: 100%;
+  }
+
+  .arrowDown {
+    display: none;
+  }
+
+  .p-left {
+    padding-left: 2rem;
+  }
+
+  .p-right {
+    padding-right: 2rem;
+  }
+}
