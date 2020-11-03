@@ -1,6 +1,8 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Ruan Kaylo" # the name of your site, e.g. ACME Corp.
+description: "My personal website" # seo description of your site, e.g. Testing SEO
+headline: "Full Stack Developer"
 
 socials:
   github: https://github.com/RuanAyram
