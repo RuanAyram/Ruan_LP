@@ -1,0 +1,26 @@
+{
+  "name": "ruan_lp",
+  "version": "2.0.0",
+  "description": "My personal website",
+  "main": "",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RuanAyram/Ruan_LP.git"
+  },
+  "keywords": [
+    "ruankaylo",
+    "landing",
+    "page",
+    "Ruan Kaylo"
+  ],
+  "author": {
+    "name": "Ruan Kaylo",
+    "url": "https://ruankaylo.netlify.app"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RuanAyram/Ruan_LP/issues"
+  },
+  "homepage": "https://github.com/RuanAyram/Ruan_LP#readme"
+}
