@@ -20,6 +20,20 @@ export const metadata: Metadata = {
     title: "Ruan Kaylo | Full Stack Developer",
     description: "Desenvolvedor Full Stack apaixonado por tecnologia e programação.",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Ruan Kaylo - Full Stack Developer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ruan Kaylo | Full Stack Developer",
+    description: "Desenvolvedor Full Stack apaixonado por tecnologia e programação.",
+    images: ["/og-image.png"],
   },
   generator: 'v0.app'
 }
