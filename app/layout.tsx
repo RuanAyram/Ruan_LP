@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://ruankaylo.netlify.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Ruan Kaylo - Full Stack Developer",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ruan Kaylo | Full Stack Developer",
     description: "Desenvolvedor Full Stack apaixonado por tecnologia e programação.",
-    images: ["/og-image.png"],
+    images: ["https://ruankaylo.netlify.app/og-image.png"],
   },
   generator: 'v0.app'
 }
