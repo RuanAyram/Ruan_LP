@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   icons: {
     icon: "/fav_one.png",
   },
+  verification: {
+    google: "iJ_iRBNO3OW6_XqUOIkWFMQFak2kPR2nf3jhusFx-u4"
+  },
   openGraph: {
     title: "Ruan Kaylo | Full Stack Developer",
     description: "Desenvolvedor Full Stack apaixonado por tecnologia e programação.",
