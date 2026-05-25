@@ -24,8 +24,16 @@ const projects = [
     title: "Sorteador de Bingo 75",
     description: "Sorteie números de bingo online gratuitamente! Sorteador de Bingo 75 (americano) com histórico de números, grade colorida B-I-N-G-O. Perfeito para jogos em família e eventos.",
     image: "/BINGO.png",
-    tags: ["Bootstrap", "JavaScript", "HTML5", "SCSS", "Google Analytics"],
+    tags: ["NextJS", "React", "TypeScript", "TailwindCSS", "Google Analytics"],
     link: "https://bingo.miny.app.br/?utm_source=ruankaylo.netlify.app&utm_medium=portifolio_cards&utm_campaign=discovery",
+    version: "Produção",
+  },
+  {
+    title: "VitrieHub",
+    description: "Mostra links de afiliado.",
+    image: "/LP_VitrineHub_v1.png",
+    tags: ["NextJS", "React", "TypeScript", "TailwindCSS", "Google Analytics"],
+    link: "https://vitrinehub.netlify.app/?utm_source=ruankaylo.netlify.app&utm_medium=portifolio_cards&utm_campaign=discovery",
     version: "Produção",
   },
   {
