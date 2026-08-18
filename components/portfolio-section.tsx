@@ -17,7 +17,7 @@ const projects = [
     description: "Site pessoal desenvolvido para apresentar meus projetos e habilidades profissionais.",
     image: "/LP_Ruan_v2.png",
     tags: ["Bootstrap", "JavaScript", "HTML5", "SCSS", "Google Analytics"],
-    link: "https://691ddaaabc69c160037a9a58--ruankaylo.netlify.app/?utm_source=ruankaylo.netlify.app&utm_medium=portifolio_cards&utm_campaign=discovery",
+    link: "https://miny.app.br/ruan1",
     version: "Versão 2.0",
   },
   {
@@ -25,15 +25,15 @@ const projects = [
     description: "Sorteie números de bingo online gratuitamente! Sorteador de Bingo 75 (americano) com histórico de números, grade colorida B-I-N-G-O. Perfeito para jogos em família e eventos.",
     image: "/BINGO.png",
     tags: ["NextJS", "React", "TypeScript", "TailwindCSS", "Google Analytics"],
-    link: "https://bingo.miny.app.br/?utm_source=ruankaylo.netlify.app&utm_medium=portifolio_cards&utm_campaign=discovery",
+    link: "https://miny.app.br/bingo1",
     version: "Produção",
   },
   {
-    title: "VitrieHub",
+    title: "VitrineHub",
     description: "Mostra links de afiliado.",
     image: "/LP_VitrineHub_v1.png",
     tags: ["NextJS", "React", "TypeScript", "TailwindCSS", "Google Analytics"],
-    link: "https://vitrinehub.netlify.app/?utm_source=ruankaylo.netlify.app&utm_medium=portifolio_cards&utm_campaign=discovery",
+    link: "https://miny.app.br/vitrine1",
     version: "Produção",
   },
   {
@@ -41,7 +41,7 @@ const projects = [
     description: "Site desenvolvido para a consultora independente Luisa Rosa, para divulgação de suas coleções e tirar dúvidas sobre os produtos.",
     image: "/LP_Luisa_v1.png",
     tags: ["Bootstrap", "JavaScript", "HTML5", "SCSS", "Google Analytics"],
-    link: "https://luisarommanel.netlify.app/?utm_source=ruankaylo.netlify.app&utm_medium=portifolio_cards&utm_campaign=discovery",
+    link: "https://miny.app.br/luisaromannel",
     version: "Produção",
   },
   {
@@ -49,7 +49,7 @@ const projects = [
     description: "Site desenvolvido para mostrar a tabela de preços da TR TV - TV por assinatura via streaming.",
     image: "/LP_TRTV_v1.png",
     tags: ["NextJS", "React", "TypeScript", "TailwindCSS", "Google Analytics"],
-    link: "https://trtvtabela.netlify.app/?utm_source=ruankaylo.netlify.app&utm_medium=portifolio_cards&utm_campaign=discovery",
+    link: "https://miny.app.br/trtv1",
     version: "Produção",
   },
   {
@@ -57,7 +57,7 @@ const projects = [
     description: "Portal de conteúdo com artigos sobre produtividade, desenvolvimento pessoal e tecnologia.",
     image: "/Blog_HE.png",
     tags: ["Liquid(Jekyll)", "HTML5", "CSS3", "JavaScript", "Google Analytics"],
-    link: "https://heldereugenio.com.br/?utm_source=ruankaylo.netlify.app&utm_medium=portifolio_cards&utm_campaign=discovery",
+    link: "https://miny.app.br/helder1",
     version: "Produção",
   },
 ]
